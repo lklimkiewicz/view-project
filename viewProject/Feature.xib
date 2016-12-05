@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16C48b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FeatureView" customModule="viewProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="348"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Testowy tytuł " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ma-5K-ddf">
+                    <rect key="frame" x="30" y="60" width="315" height="88"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OAz-1l-gUV">
+                    <rect key="frame" x="131" y="290" width="113" height="30"/>
+                    <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="BUY">
+                        <color key="titleColor" red="0.99940365552902222" green="0.53961056470870972" blue="0.31972923874855042" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.54093479882051954" blue="0.32342359173206237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="tintColor" red="0.99940365552902222" green="0.53961056470870972" blue="0.31972923874855042" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="3Ma-5K-ddf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="60" id="h56-OD-fde"/>
+                <constraint firstItem="OAz-1l-gUV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="hhM-5L-7Rv"/>
+                <constraint firstAttribute="bottom" secondItem="OAz-1l-gUV" secondAttribute="bottom" constant="45" id="lxq-XC-mwH"/>
+                <constraint firstItem="3Ma-5K-ddf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="yid-7D-nEp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="featureButton" destination="OAz-1l-gUV" id="lTU-wV-Q5M"/>
+                <outlet property="featureTitle" destination="3Ma-5K-ddf" id="GPz-bh-Gdt"/>
+            </connections>
+            <point key="canvasLocation" x="269.5" y="240"/>
+        </view>
+    </objects>
+</document>
