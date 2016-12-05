@@ -9,10 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet var exampleView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        exampleView.backgroundColor = UIColor.red
+        //
+        
+        self.view.addSubview(exampleView)
+        
     }
 
     override func didReceiveMemoryWarning() {
